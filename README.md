@@ -49,6 +49,9 @@ make it to `http://localhost:3000` as the base url. The documentation below shou
 to utilize every API endpoint necessary to build the application.
 
 ### Getting All Trainers and their Pokemon
+
+_**Hint:**_ Examine the response of this request carefully to understand what data is included.
+
 ```
 #=> Example Request
 GET /trainers
@@ -79,6 +82,9 @@ GET /trainers
 ```
 
 ### Adding a Pokemon
+
+_**Note:**_ Rails will take care of creating a random Pokemon for you, you don't have to send any Pokemon attributes in your POST request (e.g., name, species etc.; see `PokemonsController.rb:4`)
+
 ```
 #=> Example Request
 POST /pokemons
